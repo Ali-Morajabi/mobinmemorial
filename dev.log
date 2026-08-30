@@ -1,0 +1,33 @@
+
+> mobin-memo@1.0.0 dev
+> next dev --hostname 0.0.0.0
+
+   ▲ Next.js 15.5.24
+   - Local:        http://localhost:3000
+   - Network:      http://0.0.0.0:3000
+
+ ✓ Starting...
+ ✓ Ready in 7.3s
+ ○ Compiling / ...
+ ✓ Compiled / in 3.5s (1300 modules)
+ GET / 200 in 4486ms
+ ✓ Compiled in 517ms (598 modules)
+ ⚠ Cross origin request detected from 172.17.0.2 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ✓ Compiled in 247ms (598 modules)
+ GET / 200 in 43ms
+ ✓ Compiled in 331ms (1300 modules)
+ GET / 200 in 89ms
+ ✓ Compiled in 363ms (1300 modules)
+ GET / 200 in 55ms
+ ✓ Compiled in 128ms (598 modules)
+ GET / 200 in 20ms
+ ✓ Compiled /_not-found in 412ms (1291 modules)
+ GET / 404 in 554ms
+ GET / 200 in 270ms
+ GET / 200 in 191ms
+ GET / 200 in 198ms
+ GET / 200 in 212ms
+ GET / 200 in 198ms
+ GET / 200 in 204ms
+[?25h
