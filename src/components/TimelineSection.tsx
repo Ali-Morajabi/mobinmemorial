@@ -52,7 +52,7 @@ const chapters: TimelineChapter[] = [
     titleFa: 'سال دوم',
     titleEn: '2nd year',
     year: '1401/2 - 2022/3',
-    description: 'کلاس‌ها، کافه‌های اطراف دانشگاه، ناهارهای گروهی، و شب‌های درس خواندن. روزهایی که ساده به نظر می‌رسید اما حالا قیمتی‌ترین خاطرات ماست.',
+    description: 'اعتراضات، ',
     color: 'gold',
     images: [
       { src: '/timeline_sec3/1.jpg', alt: 'Study group', rotation: 2 },
