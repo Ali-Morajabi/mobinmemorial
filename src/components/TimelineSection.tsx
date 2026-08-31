@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
+import ImageLightbox from './ImageLightbox'
 
 interface TimelineChapter {
   id: number
@@ -128,6 +129,8 @@ const chapters: TimelineChapter[] = [
 ]
 
 export default function TimelineSection() {
+  const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
+
   return (
     <section className="relative py-32 overflow-hidden">
       {/* Background */}
@@ -162,14 +165,21 @@ export default function TimelineSection() {
         <div className="absolute left-8 top-0 bottom-0 w-px timeline-line md:hidden" />
 
         {chapters.map((chapter, index) => (
-          <TimelineCard key={chapter.id} chapter={chapter} index={index} />
+          <TimelineCard key={chapter.id} chapter={chapter} index={index} onImageClick={setLightboxImage} />
         ))}
       </div>
+
+      <ImageLightbox
+        isOpen={lightboxImage !== null}
+        onClose={() => setLightboxImage(null)}
+        src={lightboxImage?.src ?? ''}
+        alt={lightboxImage?.alt ?? ''}
+      />
     </section>
   )
 }
 
-function TimelineCard({ chapter, index }: { chapter: TimelineChapter; index: number }) {
+function TimelineCard({ chapter, index, onImageClick }: { chapter: TimelineChapter; index: number; onImageClick: (img: { src: string; alt: string }) => void }) {
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
   const isEven = index % 2 === 0
@@ -311,10 +321,11 @@ function TimelineCard({ chapter, index }: { chapter: TimelineChapter; index: num
                   <img
                     src={img.src}
                     alt={img.alt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                    className="w-full h-full object-cover cursor-pointer group-hover:scale-105 transition-transform duration-500 ease-out"
+                     onClick={() => onImageClick({ src: img.src, alt: img.alt })}
                   />
                 )}
-                <div className="absolute inset-0 border border-gold-400/10 rounded-lg group-hover:border-gold-400/30 transition-colors duration-300" />
+                <div className="absolute inset-0 border border-gold-400/10 rounded-lg group-hover:border-gold-400/30 transition-colors duration-300 pointer-events-none" />
               </div>
             ))}
           </motion.div>
@@ -323,3 +334,4 @@ function TimelineCard({ chapter, index }: { chapter: TimelineChapter; index: num
     </div>
   )
 }
+

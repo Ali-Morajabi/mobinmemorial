@@ -1,7 +1,8 @@
 'use client'
 
 import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
+import ImageLightbox from './ImageLightbox'
 
 interface FriendProfile {
   id: number
@@ -191,6 +192,7 @@ export default function FriendsSection() {
 function FriendCard({ friend, index }: { friend: FriendProfile; index: number }) {
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: true, margin: '-50px' })
+  const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null)
 
   const colorClasses = {
     gold: 'from-gold-500/20 to-gold-600/5 border-gold-500/20 hover:border-gold-400/40',
@@ -224,7 +226,8 @@ function FriendCard({ friend, index }: { friend: FriendProfile; index: number })
               <img
                 src={friend.image}
                 alt={friend.name}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                className="w-full h-full object-cover cursor-pointer group-hover:scale-105 transition-transform duration-700 ease-out"
+                onClick={() => setLightboxImage({ src: friend.image!, alt: friend.name })}
               />
             ) : (
               <>
@@ -271,6 +274,13 @@ function FriendCard({ friend, index }: { friend: FriendProfile; index: number })
           </div>
         </div>
       </div>
+
+      <ImageLightbox
+        isOpen={lightboxImage !== null}
+        onClose={() => setLightboxImage(null)}
+        src={lightboxImage?.src ?? ''}
+        alt={lightboxImage?.alt ?? ''}
+      />
     </motion.div>
   )
 }
