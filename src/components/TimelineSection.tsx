@@ -52,7 +52,7 @@ const chapters: TimelineChapter[] = [
     titleFa: 'سال دوم',
     titleEn: '2nd year',
     year: '1401/2 - 2022/3',
-    description: 'اعتراضات، ',
+    description: 'اعتراضات، خوشگذرونی ای کل ترم 4 زیر اون همه فشار واسش برنامه ریختیم، اما در نهایت به رندوم ترین شکل ممکن اجرا کردیم و هنوز هم که هنوزه یکی از پرخاطره ترین شبای عمرمونه',
     color: 'gold',
     images: [
       { src: '/timeline_sec3/1.jpg', alt: 'Study group', rotation: 2 },
@@ -60,6 +60,7 @@ const chapters: TimelineChapter[] = [
       { src: '/timeline_sec3/3.jpg', alt: 'Coffee breaks', rotation: 1 },
       { src: '/timeline_sec3/4.jpg', alt: 'Coffee breaks', rotation: 1 },
       { src: '/timeline_sec3/5.jpg', alt: 'Coffee breaks', rotation: 1 },
+      { src: '/timeline_sec3/6.jpg', alt: 'Coffee breaks', rotation: 1 },
     ],
   },
   {
