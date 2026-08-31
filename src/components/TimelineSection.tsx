@@ -17,48 +17,49 @@ interface TimelineChapter {
 const chapters: TimelineChapter[] = [
   {
     id: 1,
-    titleFa: 'روزهای اول',
+    titleFa: 'روزهای اول ترم دو',
     titleEn: 'First Days',
-    year: '۱۳۹۸ - ۲۰۱۹',
-    description: 'اولین روزهای ورودی جدید؛ چهره‌های ناآشنا، دانشگاه بزرگ، و حسی تازه که هنوز نمی‌دانستیم قرار است چه اتفاقی بیفتد.',
+    year: '1401 - 2022',
+    description: 'همه چی از اتاق 407 عمید شروع شد.',
     quote: {
-      text: 'هر آغاز، نیمای از یک داستان است که هنوز نوشته نشده.',
+      text: 'دعوا ها و نساز بازیای اول کار، سلف کوی، پرشیکا، پشت بوم عمید و ویوی برج میلادش، دانشکده و دانشگاه با کلی چیزای کشف کردنیش، کتابخونه مفتح، میدون وسط کوی',
     },
     color: 'navy',
     images: [
-      { src: '/api/placeholder/400/300', alt: 'University entrance', rotation: -3 },
-      { src: '/api/placeholder/400/300', alt: 'Campus view', rotation: 2 },
-      { src: '/api/placeholder/400/300', alt: 'First day excitement', rotation: -1 },
+      { src: '/timeline_sec1/1.jpg', alt: 'University entrance', rotation: -3 },
+      { src: '/timeline_sec1/2.jpg', alt: 'Campus view', rotation: 2 },
+      { src: '/timeline_sec1/3.jpg', alt: 'First day excitement', rotation: -1 },
     ],
   },
   {
     id: 2,
     titleFa: 'آشنایی',
     titleEn: 'Becoming Friends',
-    year: '۱۳۹۸ - ۲۰۱۹',
-    description: 'از همکلاسی‌های ساده تا دوستانی که بدون آن‌ها هیچ خاطره‌ای کامل نبود. همان لحظه‌ای که فهمیدیم این رفاقت قرار است ماندگار باشد.',
+    year: '2022 - 1401',
+    description: '',
     quote: {
-      text: 'دوستی مثل یک درخت است؛ باید آن را آب داد تا رشد کند.',
-      author: 'مثل فارسی',
+      text: 'بیرون رفتنای اول آشنایی، اتاق 406 که مال رضا ترابی و آرین اینا بود، پروژه شطرنج نوذری',
     },
     color: 'turquoise',
     images: [
-      { src: '/api/placeholder/400/300', alt: 'Study group', rotation: 2 },
-      { src: '/api/placeholder/400/300', alt: 'Library moments', rotation: -2 },
-      { src: '/api/placeholder/400/300', alt: 'Coffee breaks', rotation: 1 },
+      { src: '/timeline_sec2/1.jpg', alt: 'Study group', rotation: 2 },
+      { src: '/timeline_sec2/2.jpg', alt: 'Library moments', rotation: -2 },
+      { src: '/timeline_sec2/3.jpg', alt: 'Coffee breaks', rotation: 1 },
     ],
   },
   {
     id: 3,
-    titleFa: 'زندگی دانشجویی',
-    titleEn: 'Campus Life',
-    year: '۱۳۹۹ - ۲۰۲۰',
+    titleFa: 'سال دوم',
+    titleEn: '2nd year',
+    year: '1401/2 - 2022/3',
     description: 'کلاس‌ها، کافه‌های اطراف دانشگاه، ناهارهای گروهی، و شب‌های درس خواندن. روزهایی که ساده به نظر می‌رسید اما حالا قیمتی‌ترین خاطرات ماست.',
     color: 'gold',
     images: [
-      { src: '/api/placeholder/400/300', alt: 'Campus cafeteria', rotation: -2 },
-      { src: '/api/placeholder/400/300', alt: 'Study sessions', rotation: 3 },
-      { src: '/api/placeholder/400/300', alt: 'Evening walks', rotation: -1 },
+      { src: '/timeline_sec3/1.jpg', alt: 'Study group', rotation: 2 },
+      { src: '/timeline_sec3/2.jpg', alt: 'Library moments', rotation: -2 },
+      { src: '/timeline_sec3/3.jpg', alt: 'Coffee breaks', rotation: 1 },
+      { src: '/timeline_sec3/4.jpg', alt: 'Coffee breaks', rotation: 1 },
+      { src: '/timeline_sec3/5.jpg', alt: 'Coffee breaks', rotation: 1 },
     ],
   },
   {
@@ -296,14 +297,22 @@ function TimelineCard({ chapter, index }: { chapter: TimelineChapter; index: num
                 className="relative aspect-[4/3] rounded-lg overflow-hidden group"
                 style={{ transform: `rotate(${img.rotation}deg)` }}
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-navy-800/80 to-navy-900/90 flex items-center justify-center">
-                  <div className="text-center">
-                    <svg className="w-8 h-8 mx-auto text-gold-400/30 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    <span className="text-beige-300/30 text-xs">{img.alt}</span>
+                {img.src.includes('placeholder') ? (
+                  <div className="absolute inset-0 bg-gradient-to-br from-navy-800/80 to-navy-900/90 flex items-center justify-center">
+                    <div className="text-center">
+                      <svg className="w-8 h-8 mx-auto text-gold-400/30 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                      <span className="text-beige-300/30 text-xs">{img.alt}</span>
+                    </div>
                   </div>
-                </div>
+                ) : (
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                  />
+                )}
                 <div className="absolute inset-0 border border-gold-400/10 rounded-lg group-hover:border-gold-400/30 transition-colors duration-300" />
               </div>
             ))}

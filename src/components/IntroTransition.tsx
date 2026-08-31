@@ -46,11 +46,12 @@ export default function IntroTransition() {
         >
           <blockquote className="mb-8">
             <p className="text-3xl md:text-4xl lg:text-5xl text-beige-200/80 font-display leading-relaxed mb-6">
-              رفاقت مثل یک مُسند است:
+              دوستانم، دارایی من هستند
               <br />
-              <span className="text-gradient-gold">نمی‌شود آن را فقط خواند،</span>
+              <span className="text-gradient-gold">دارایی هایم داستان زندگی ام را میسازند</span>
               <br />
-              <span className="text-beige-200/60">باید زیست.</span>
+              <span className="text-beige-200/60">و من زندگی ام را دوست دارم.</span>
+              
             </p>
           </blockquote>
 
@@ -62,7 +63,7 @@ export default function IntroTransition() {
           >
             <div className="h-px w-16 bg-gradient-to-r from-transparent to-gold-400/40" />
             <span className="text-gold-400/50 text-sm italic font-display">
-              Friendship is not a story to be read, but a life to be lived.
+              خودم سرودم (علی)
             </span>
             <div className="h-px w-16 bg-gradient-to-l from-transparent to-gold-400/40" />
           </motion.div>

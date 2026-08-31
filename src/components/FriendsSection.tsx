@@ -43,12 +43,12 @@ const friends: FriendProfile[] = [
   },
   {
     id: 4,
-    name: 'آقا ترابی',
-    nickname: 'کتاب نخون ترین',
-    emoji: '🌸',
-    image: '/friends/torabi.webp',
-    memory: 'همیشه بهانه‌ای برای نخواندن کتاب داشت، اما همیشه با حضورش کلاس را رنگی می‌کرد.',
-    color: 'gold',
+    name: 'ماردین',
+    nickname: 'آقا نیچی',
+    emoji: '🌟',
+    image: '/friends/same.webp', // to be adjusted later, don't touch it now.
+    memory: 'عقاید قوی‌ای داشت، اما رفاقتش قوی‌تر بود. هیچ‌وقت از حرف زدن دست نمی‌کشید.',
+    color: 'turquoise',
   },
   {
     id: 5,
@@ -61,6 +61,15 @@ const friends: FriendProfile[] = [
   },
   {
     id: 6,
+    name: 'آقا ترابی',
+    nickname: 'کتاب نخون ترین',
+    emoji: '🌸',
+    image: '/friends/torabi.webp',
+    memory: 'همیشه بهانه‌ای برای نخواندن کتاب داشت، اما همیشه با حضورش کلاس را رنگی می‌کرد.',
+    color: 'gold',
+  },
+  {
+    id: 7,
     name: 'آرزو',
     nickname: 'مرد ستیز گربه ای',
     emoji: '🌟',
@@ -69,7 +78,7 @@ const friends: FriendProfile[] = [
     color: 'turquoise',
   },
   {
-    id: 7,
+    id: 8,
     name: 'آقا دست',
     nickname: 'غیرمنطقی ترین',
     emoji: '🌙',
@@ -78,7 +87,7 @@ const friends: FriendProfile[] = [
     color: 'turquoise',
   },
   {
-    id: 8,
+    id: 9,
     name: 'ابوالفضل',
     nickname: 'کارراه ننداز ترین',
     emoji: '🌙',
@@ -87,7 +96,7 @@ const friends: FriendProfile[] = [
     color: 'turquoise',
   },
   {
-    id: 9,
+    id: 10,
     name: 'آقا دلیر',
     nickname: 'بزرگترین آشتی کننده تاریخ',
     emoji: '✨',
