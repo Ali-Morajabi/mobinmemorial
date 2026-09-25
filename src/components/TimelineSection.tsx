@@ -7,7 +7,7 @@ import ImageLightbox from './ImageLightbox'
 interface TimelineChapter {
   id: number
   titleFa: string
-  titleEn: string
+  // titleEn: string
   year: string
   description: string
   quote?: { text: string; author?: string }
@@ -19,7 +19,7 @@ const chapters: TimelineChapter[] = [
   {
     id: 1,
     titleFa: 'روزهای اول ترم دو',
-    titleEn: 'First Days',
+    // titleEn: 'First Days',
     year: '1401 - 2022',
     description: 'همه چی از اتاق 407 عمید شروع شد.',
     quote: {
@@ -35,23 +35,24 @@ const chapters: TimelineChapter[] = [
   {
     id: 2,
     titleFa: 'آشنایی',
-    titleEn: 'Becoming Friends',
+    // titleEn: 'Becoming Friends',
     year: '2022 - 1401',
     description: '',
     quote: {
-      text: 'بیرون رفتنای اول آشنایی، اتاق 406 که مال رضا ترابی و آرین اینا بود، پروژه شطرنج نوذری',
+      text: 'بیرون رفتنای اول آشنایی، اتاق 406 که مال رضا ترابی و آرین اینا بود، پروژه شطرنج نوذری. تولدت با بچه های 406.',
     },
     color: 'turquoise',
     images: [
       { src: '/timeline_sec2/1.jpg', alt: 'Study group', rotation: 2 },
       { src: '/timeline_sec2/2.jpg', alt: 'Library moments', rotation: -2 },
       { src: '/timeline_sec2/3.jpg', alt: 'Coffee breaks', rotation: 1 },
+      { src: '/timeline_sec2/4.jpg', alt: 'Coffee breaks', rotation: 1 },
     ],
   },
   {
     id: 3,
     titleFa: 'سال دوم',
-    titleEn: '2nd year',
+    // titleEn: '2nd year',
     year: '1401/2 - 2022/3',
     description: 'اعتراضات، خوشگذرونی ای کل ترم 4 زیر اون همه فشار واسش برنامه ریختیم، اما در نهایت به رندوم ترین شکل ممکن اجرا کردیم و هنوز هم که هنوزه یکی از پرخاطره ترین شبای عمرمونه',
     color: 'gold',
@@ -62,58 +63,69 @@ const chapters: TimelineChapter[] = [
       { src: '/timeline_sec3/4.jpg', alt: 'Coffee breaks', rotation: 1 },
       { src: '/timeline_sec3/5.jpg', alt: 'Coffee breaks', rotation: 1 },
       { src: '/timeline_sec3/6.jpg', alt: 'Coffee breaks', rotation: 1 },
+      { src: '/timeline_sec3/7.jpg', alt: 'Coffee breaks', rotation: 1 },
     ],
   },
   {
     id: 4,
-    titleFa: 'سفرها و ماجراجویی‌ها',
-    titleEn: 'Trips & Adventures',
-    year: '۱۴۰۰ - ۲۰۲۱',
-    description: 'سفرهایی که با هم کردیم؛ از کوه‌های البرز تا کوچه‌های اصفهان. هر سفر یک فصل از کتاب خاطرات ماست.',
-    quote: {
-      text: 'سفر، تنها فاصله نیست؛ کشف است.',
-    },
+    titleFa: 'ترم 5',
+    // titleEn: 'Sem 5',
+    year: '1403/4 - 2023/4',
+    description: 'روزای اول خوابگاه با شهروز، ماردین و تولدش، آقا سامع ملحق شد، بریون سال جدید میلادی',
+    // quote: {
+    //   text: 'سفر، تنها فاصله نیست؛ کشف است.',
+    // },
     color: 'turquoise',
     images: [
-      { src: '/api/placeholder/400/300', alt: 'Mountain trip', rotation: 1 },
-      { src: '/api/placeholder/400/300', alt: 'City exploration', rotation: -3 },
-      { src: '/api/placeholder/400/300', alt: 'Group photo', rotation: 2 },
+      { src: '/timeline_sec4/1.jpg', alt: 'Mountain trip', rotation: 1 },
+      { src: '/timeline_sec4/2.jpg', alt: 'City exploration', rotation: -3 },
+      { src: '/timeline_sec4/3.jpg', alt: 'Group photo', rotation: 2 },
+      { src: '/timeline_sec4/4.jpg', alt: 'Group photo', rotation: 2 },
     ],
   },
   {
     id: 5,
-    titleFa: 'خنده‌ها و شوخی‌ها',
-    titleEn: 'Laughter & Inside Jokes',
-    year: '۱۴۰۰ - ۲۰۲۲',
-    description: 'آن شوخی‌هایی که فقط ما می‌فهمیدم، خنده‌هایی که در سکوت کلاس می‌گرفتیم، و لحظه‌هایی که فقط بین ما معنا داشت.',
+    titleFa: ' ترم 5 و 6 - گشت و گذار',
+    // titleEn: 'Sem 5 & 6',
+    year: '1403/4 - 2023/4',
+    description: 'رفتن آقا سامع از اتاق و ورود آقا مناسب :)) (از مناسب عکس پیدا نکردم)، آب نداشتیم تو اون خوابگاه عطار لامصب، برای حموم هم باید میرفتیم خوابگاه ضیاء با سوسکای فراوان. و مریضی وحشتناک من و پینیسیلین 1200 و هماهنگی تولد. فاکینگ رای دادیم به پزشکیان گاو LOL. سمینار زمستونی شریف با بچه ها. تولد خودت و سوپرایز تو کافه (منوی گرون اون کافه ای که یه سگ باحال اونجا بود و بعد پنج دقیقه با ذکر خسته نباشید خارج شدیم) ',
     color: 'gold',
     images: [
-      { src: '/api/placeholder/400/300', alt: 'Funny moments', rotation: -1 },
-      { src: '/api/placeholder/400/300', alt: 'Inside jokes', rotation: 2 },
-      { src: '/api/placeholder/400/300', alt: 'Laughing together', rotation: -2 },
+      { src: '/timeline_sec5/1.jpg', alt: 'Funny moments', rotation: -1 },
+      { src: '/timeline_sec5/2.jpg', alt: 'Funny moments', rotation: -1 },
+      { src: '/timeline_sec5/3.jpg', alt: 'Funny moments', rotation: -1 },
+      { src: '/timeline_sec5/4.jpg', alt: 'Funny moments', rotation: -1 },
+      { src: '/timeline_sec5/5.jpg', alt: 'Funny moments', rotation: -1 },
+      { src: '/timeline_sec5/6.jpg', alt: 'Funny moments', rotation: -1 },
+      { src: '/timeline_sec5/7.jpg', alt: 'Funny moments', rotation: -1 },
+      { src: '/timeline_sec5/8.jpg', alt: 'Funny moments', rotation: -1 },
+      { src: '/timeline_sec5/9.jpg', alt: 'Funny moments', rotation: -1 },
+      { src: '/timeline_sec5/10.jpg', alt: 'Funny moments', rotation: -1 },
     ],
   },
   {
     id: 6,
-    titleFa: 'چالش‌ها',
-    titleEn: 'Overcoming Challenges',
-    year: '۱۴۰۱ - ۲۰۲۳',
-    description: 'سخت‌ترین روزها؛ امتحان‌های سخت، پروژه‌های چالش‌برانگیز، و روزهایی که خسته بودیم اما کنار هم ایستادیم.',
-    quote: {
-      text: 'الماس بدون فشار نمی‌نشیند.',
-      author: 'ضرب‌المثل',
-    },
+    titleFa: 'ترم 7 و 8',
+    // titleEn: 'SEM 7 & 8',
+    year: '1404/5 - 2024/5',
+    description: 'اتاق زیبای خوابگاه بهنامت با بروبکس مورد علاقه ت که باعث شد بری پیش یه مشاوری گزارششون کنی 🤣. سال نوی جدید میلادی رو هم توی خوابگاه بهنام با اعضای یکم متفاوت دوباره جشن بریون گرفتیم. بعد اومدی خوابگاه وصال و پشمات ریخته بود که چقد خوبه و تهشم هممون راضی بودیم. اتاق 012 سر زدنت با حضور عاباس و حسام و امین و مهدی حسینی. اقا چند جلسه افتخار داده بود باشگاهم اومد که یه عکس مشترک با رجبو گذاشتم. در آخر سیگار کشیدن(فوت کردن)ت',
+    // quote: {
+    //   text: 'الماس بدون فشار نمی‌نشیند.',
+    //   author: 'ضرب‌المثل',
+    // },
     color: 'navy',
     images: [
-      { src: '/api/placeholder/400/300', alt: 'Late night study', rotation: 2 },
-      { src: '/api/placeholder/400/300', alt: 'Project work', rotation: -3 },
-      { src: '/api/placeholder/400/300', alt: 'Supporting each other', rotation: 1 },
+      { src: '/timeline_sec6/1.jpg', alt: 'Funny moments', rotation: -1 },
+      { src: '/timeline_sec6/2.jpg', alt: 'Funny moments', rotation: -1 },
+      { src: '/timeline_sec6/3.jpg', alt: 'Funny moments', rotation: -1 },
+      { src: '/timeline_sec6/4.jpg', alt: 'Funny moments', rotation: -1 },
+      { src: '/timeline_sec6/5.jpg', alt: 'Funny moments', rotation: -1 },
     ],
   },
   {
     id: 7,
     titleFa: 'خداحافظی و آرزو',
-    titleEn: 'Farewell & Wishes',
+    // titleEn: 'Farewell & Wishes',
     year: '۱۴۰۳ - ۲۰۲۴',
     description: 'وقتی یکی از ما راهی سفری جدید می‌شود. دلتنگی و شادی در هم تنیده: دلتنگی برای خاطرات، شادی برای آینده‌ای که منتظر اوست.',
     quote: {
@@ -257,14 +269,6 @@ function TimelineCard({ chapter, index, onImageClick }: { chapter: TimelineChapt
             {chapter.titleFa}
           </motion.h3>
           
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ delay: 0.65 }}
-            className={`text-sm ${accentColors[chapter.color]} font-display italic mb-4`}
-          >
-            {chapter.titleEn}
-          </motion.p>
 
           {/* Description */}
           <motion.p

@@ -94,9 +94,9 @@ export default function Home() {
         <ParallaxDivider variant="geometric" />
 
         {/* Poetry & Wisdom */}
-        <div id="poetry">
+        {/* <div id="poetry">
           <PoetrySection />
-        </div>
+        </div> */}
 
         <ParallaxDivider variant="default" />
 

@@ -47,7 +47,7 @@ const friends: FriendProfile[] = [
     name: 'ماردین',
     nickname: 'آقا نیچی',
     emoji: '🌟',
-    image: '/friends/same.webp', // to be adjusted later, don't touch it now.
+    image: '/friends/mardin.webp', // to be adjusted later, don't touch it now.
     memory: 'عقاید قوی‌ای داشت، اما رفاقتش قوی‌تر بود. هیچ‌وقت از حرف زدن دست نمی‌کشید.',
     color: 'turquoise',
   },
@@ -90,7 +90,7 @@ const friends: FriendProfile[] = [
   {
     id: 9,
     name: 'ابوالفضل',
-    nickname: 'کارراه ننداز ترین',
+    nickname: 'آچار فرانسه',
     emoji: '🌙',
     image: 'friends/abolfazl.webp',
     memory: 'حرف‌هایش غیرمنطقی بود، اما در نهایت همیشه درست از آب درمی‌آمد.',
@@ -108,7 +108,7 @@ const friends: FriendProfile[] = [
   {
     id: 10,
     name: 'مریم',
-    nickname: 'دراماکوئین',
+    nickname: 'پولدار غرغرو',
     emoji: '💫',
     image: 'friends/maryam.webp',
     memory: 'هر دورهمی با حضورش به یک فیلم تبدیل می‌شد. با او هر لحظه به یک داستان تبدیل می‌شد.',
